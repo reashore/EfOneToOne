@@ -13,8 +13,8 @@
         </e>
         <e p="EfOneToOne.csproj" t="IncludeRecursive" />
         <e p="Migrations" t="Include">
-          <e p="20181129224339_InitialMigration.cs" t="Include" />
-          <e p="20181129224339_InitialMigration.Designer.cs" t="Include" />
+          <e p="20181129225808_InitialMigration.cs" t="Include" />
+          <e p="20181129225808_InitialMigration.Designer.cs" t="Include" />
           <e p="SchoolDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">

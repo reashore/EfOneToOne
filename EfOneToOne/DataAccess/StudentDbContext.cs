@@ -16,7 +16,7 @@ namespace EfOneToOne.DataAccess
 //            modelBuilder.Entity<Student>()
 //                .HasOne<StudentAddress>(student => student.Address)
 //                .WithOne(address => address.Student)
-//                .HasForeignKey<StudentAddress>(address => address.AddressOfStudentId);
+//                .HasForeignKey<StudentAddress>(address => address.StudentId);
 
             modelBuilder.ApplyConfiguration(new StudentConfiguration());
         }

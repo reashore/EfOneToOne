@@ -10,6 +10,6 @@ namespace EfOneToOne.DataAccess
         {
             builder.HasOne<StudentAddress>(student => student.Address)
                 .WithOne(address => address.Student)
-                .HasForeignKey<StudentAddress>(address => address.AddressOfStudentId);
+                .HasForeignKey<StudentAddress>(address => address.StudentId);
         }
     }}
