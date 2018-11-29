@@ -16,7 +16,7 @@ namespace EfOneToOne
 
         private static void CreateOneToOneRelationship()
         {
-            using (SchoolDbContext studentDbContext = new SchoolDbContext())
+            using (SchoolDbContext schoolDbContext = new SchoolDbContext())
             {
                 StudentAddress studentAddress = new StudentAddress
                 {
@@ -26,7 +26,7 @@ namespace EfOneToOne
                     Country = "Canada"
                 };
 
-                studentDbContext.StudentAddresses.Add(studentAddress);
+                schoolDbContext.StudentAddresses.Add(studentAddress);
 
                 Student student = new Student
                 {
@@ -34,9 +34,9 @@ namespace EfOneToOne
                     Address = studentAddress
                 };
                 
-                studentDbContext.Students.Add(student);
+                schoolDbContext.Students.Add(student);
 
-                studentDbContext.SaveChanges();
+                schoolDbContext.SaveChanges();
             }
         }    
     }
