@@ -21,6 +21,8 @@ namespace EfOneToOne.DataAccess
             modelBuilder.ApplyConfiguration(new StudentConfiguration());
         }
 
+        // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public DbSet<Student> Students { get; set; }
+        // ReSharper disable once UnusedAutoPropertyAccessor.Global
         public DbSet<StudentAddress> StudentAddresses { get; set; }
     }}
